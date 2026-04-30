@@ -1,0 +1,7 @@
+{
+  "name": "clearup-mess-room",
+  "version": "1.0.0",
+  "description": "A Claude Code plugin for uninstalling plugins and skills. Helps clean up unused Claude Code extensions.",
+  "license": "MIT",
+  "type": "module"
+}
