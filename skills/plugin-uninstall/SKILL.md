@@ -132,6 +132,45 @@ User input: "gstack"
     │                       └─► NOT FOUND → "No matching plugin or skill found."
 ```
 
+## Installation | 安装说明
+
+### From GitHub (Recommended)
+
+```bash
+# Clone the plugin to your marketplaces directory
+git clone https://github.com/DaoYoung/clearup-mess-room.git \
+  ~/.claude/plugins/marketplaces/clearup-mess-room
+```
+
+Then add to your `~/.claude/plugins/known_marketplaces.json`:
+
+```json
+{
+  "clearup-mess-room": {
+    "source": {
+      "source": "github",
+      "repo": "DaoYoung/clearup-mess-room"
+    },
+    "installLocation": "~/.claude/plugins/marketplaces/clearup-mess-room",
+    "lastUpdated": "2026-04-30T00:00:00.000Z"
+  }
+}
+```
+
+### Manual Installation
+
+```bash
+# 1. Create skills directory if not exists
+mkdir -p ~/.claude/skills
+
+# 2. Copy the skill to your skills directory
+cp -r skills/plugin-uninstall ~/.claude/skills/
+
+# Or clone entire repository
+git clone https://github.com/DaoYoung/clearup-mess-room.git /tmp/clearup-mess-room
+cp -r /tmp/clearup-mess-room/skills/plugin-uninstall ~/.claude/skills/
+```
+
 ## Outputs
 
 Report each of the following:
