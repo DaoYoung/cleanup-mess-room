@@ -81,6 +81,14 @@ For each confirmed directory:
 
 Report success or failure for each directory.
 
+### Step 7: Clean up known_marketplaces.json
+
+After successfully deleting a plugin directory, check `$HOME/.claude/plugins/known_marketplaces.json`:
+
+1. Check if the deleted plugin's **installLocation** path matches the deleted directory
+2. If found, remove the corresponding entry from known_marketplaces.json
+3. Report whether known_marketplaces.json was updated
+
 ## Directory Scanning Logic
 
 ```
